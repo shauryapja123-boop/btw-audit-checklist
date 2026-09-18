@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTW Reports</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="reports">
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="profile-box">
+          <div class="avatar">AD</div>
+          <div>
+            <div class="profile-name" data-profile-outlet>BTW Hospitality</div>
+            <small data-profile-manager>Audit Team</small>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a class="nav-item" href="checklist.html">Overview</a>
+          <a class="nav-item active" href="reports.html">Reports</a>
+          <a class="nav-item" href="settings.html">Settings</a>
+          <a class="nav-item" href="section-1.html">Preparing for Success</a>
+          <a class="nav-item" href="section-2.html">Service &amp; Hospitality</a>
+          <a class="nav-item" href="section-3.html">Quality &amp; Product</a>
+          <a class="nav-item" href="section-4.html">Cleanliness &amp; Maintenance</a>
+          <a class="nav-item" href="section-5.html">Showroom &amp; Operations</a>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <div>
+            <p class="eyebrow">Analytics</p>
+            <h1>Reports &amp; Insights</h1>
+          </div>
+          <div class="header-actions">
+            <button type="button" class="ghost small" id="themeToggle">🌙 Dark</button>
+            <button type="button" class="primary small" id="exportBtn">Export PDF</button>
+            <button type="button" class="ghost small" id="logoutBtn">Logout</button>
+          </div>
+        </header>
+
+        <section class="report-grid">
+          <article class="report-card">
+            <span class="kpi-label">Outlet score</span>
+            <strong>91.8%</strong>
+            <small>Excellent</small>
+          </article>
+          <article class="report-card">
+            <span class="kpi-label">Service</span>
+            <strong>88.6%</strong>
+            <small>+8.2% vs last week</small>
+          </article>
+          <article class="report-card">
+            <span class="kpi-label">Cleanliness</span>
+            <strong>90.4%</strong>
+            <small>+5.6% vs last week</small>
+          </article>
+          <article class="report-card">
+            <span class="kpi-label">Compliance</span>
+            <strong>94.1%</strong>
+            <small>+11.1% vs last week</small>
+          </article>
+        </section>
+
+        <section class="module-panel">
+          <div class="panel-header">
+            <h2>Current outlet summary</h2>
+          </div>
+
+          <div class="settings-list compact">
+            <div class="summary-row">
+              <span class="label">Outlet</span>
+              <strong data-profile-outlet>BTW Hospitality</strong>
+            </div>
+            <div class="summary-row">
+              <span class="label">Manager</span>
+              <strong data-profile-manager>Audit Team</strong>
+            </div>
+            <div class="summary-row">
+              <span class="label">Location</span>
+              <strong data-profile-location>Head Office</strong>
+            </div>
+            <div class="summary-row">
+              <span class="label">Last Audit Date</span>
+              <strong data-profile-date>2026-09-18</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="module-panel">
+          <div class="panel-header">
+            <h2>Recent audit summary</h2>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Outlet</th>
+                  <th>Manager</th>
+                  <th>Score</th>
+                  <th>Status</th>
+                  <th>Last review</th>
+                </tr>
+              </thead>
+              <tbody id="auditHistoryBody">
+                <tr>
+                  <td colspan="5">Loading saved audits...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

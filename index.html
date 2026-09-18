@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTW Audit Portal | Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="login">
+    <div class="auth-shell">
+      <div class="auth-panel">
+        <div class="brand-block">
+          <div class="brand-badge">BTW</div>
+          <div>
+            <p class="eyebrow">Operational Excellence</p>
+            <h1>BTW Audit Portal</h1>
+          </div>
+        </div>
+
+        <p class="welcome-copy">
+          Track outlet readiness, service standards, and audit performance from one modern dashboard.
+        </p>
+
+        <form id="loginForm" class="login-form" novalidate>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@btw.com" required />
+          </div>
+
+          <div class="field-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Enter password" required />
+          </div>
+
+          <button type="submit" class="primary login-button">Sign In</button>
+          <p id="loginError" class="login-error" aria-live="polite"></p>
+        </form>
+
+        <div class="demo-box">
+          <strong>Demo access</strong>
+          <span>Email: admin@btw.com</span>
+          <span>Password: btw@123</span>
+        </div>
+      </div>
+
+      <div class="auth-visual" aria-label="Audit overview">
+        <div class="visual-card highlight">
+          <span>Outlet score</span>
+          <strong>92.4%</strong>
+          <small>Excellent performance</small>
+        </div>
+
+        <div class="visual-card">
+          <span>Active audits</span>
+          <strong>18</strong>
+        </div>
+
+        <div class="visual-card telemetry">
+          <span>Inspection trend</span>
+          <ul>
+            <li>Service +8.2%</li>
+            <li>Cleanliness +5.6%</li>
+            <li>Compliance +11.1%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

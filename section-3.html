@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 3 - Quality Serving Perfect Product</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="section-3" data-max-score="12">
+    <div class="page">
+      <div class="page-topbar">
+        <button type="button" class="secondary" id="backToDashboard">← Back to Dashboard</button>
+        <div class="actions">
+          <button type="button" class="secondary" id="resetBtn">Reset</button>
+          <button type="button" class="primary" id="saveBtn">Save Audit</button>
+          <button type="button" class="primary" id="printBtn">Print</button>
+          <button type="button" class="ghost" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+
+      <header class="section-page-header">
+        <h1>SECTION 3 - QUALITY: SERVING PERFECT PRODUCT</h1>
+      </header>
+
+      <section class="meta-grid">
+        <div class="meta-item">
+          <label for="outletNameInput">Outlet Name</label>
+          <input id="outletNameInput" type="text" placeholder="Enter outlet name" />
+        </div>
+        <div class="meta-item">
+          <label for="managerNameInput">Manager Name</label>
+          <input id="managerNameInput" type="text" placeholder="Enter manager name" />
+        </div>
+        <div class="meta-item">
+          <label for="auditDateInput">Audit Date</label>
+          <input id="auditDateInput" type="date" />
+        </div>
+        <div class="meta-item">
+          <label for="auditLocationInput">Location</label>
+          <input id="auditLocationInput" type="text" placeholder="Enter location" />
+        </div>
+      </section>
+
+      <div id="auditMetaStatus" class="login-error" style="margin: 10px 0 0; min-height: 18px;"></div>
+
+      <section class="audit-section">
+        <table class="audit-table">
+          <thead>
+            <tr>
+              <th style="width: 6%;">#</th>
+              <th>SECTION / CRITERIA</th>
+              <th style="width: 12%;">Ach.</th>
+              <th style="width: 10%;">Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Manager follows up on SOPs adherence</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>2</td><td>Products Within Shelf Life (No Expired food)</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>3</td><td>Products Stored at correct Temperatures</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>4</td><td>3 sink setup - Hot Water &amp; Sanitizer available</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>5</td><td>Kitchen Clean and Well Maintained</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>6</td><td>Raw Material stocked prior to peak hour</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>7</td><td>Random check 3 products (Dish 1, 2, 3) (Temperature, Garnishing, Shape)</td><td><div class="mini-checks"><input type="checkbox" data-points="1" aria-label="Product 1"><input type="checkbox" data-points="1" aria-label="Product 2"><input type="checkbox" data-points="1" aria-label="Product 3"></div></td><td>3</td></tr>
+            <tr><td>8</td><td>Hot food served Hot, Cold food served Cold. online menu update and check</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>9</td><td>Correct Shape, portioning and Garnished well</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>10</td><td>Neatly Arranged with condiments and cutlery</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr class="subtotal-row"><td colspan="2" class="subtotal-label">Subtotal</td><td colspan="2" class="subtotal-value"><span data-section-total>0</span> / 12</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="summary-box">
+        <h2>SUMMARY &amp; SCORING</h2>
+        <div class="summary-grid">
+          <div class="summary-row"><span class="label">Maximum Score</span><span class="value">12</span></div>
+          <div class="summary-row"><span class="label">Score Achieved</span><span class="value"><span id="score-achieved">0</span> / 12</span></div>
+          <div class="summary-row"><span class="label">Performance %</span><span class="value"><span id="performance-percent">0%</span></span></div>
+          <div class="summary-row highlight-row"><span class="label">Performance Rating</span><span class="value" id="performance-rating">Below Expectations</span></div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
