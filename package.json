@@ -7,6 +7,11 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port 4173"
   },
+  "config": {
+    "allow-scripts": {
+      "esbuild": true
+    }
+  },
   "devDependencies": {
     "vite": "^5.4.10"
   }
