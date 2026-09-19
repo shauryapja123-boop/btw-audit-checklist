@@ -1,3 +1,5 @@
+import { validateLogin } from './auth.mjs';
+
 const page = document.body.dataset.page;
 
 const THEME_KEY = 'btwTheme';
@@ -265,13 +267,15 @@ if (page === 'login') {
         return;
       }
 
-      if (email.toLowerCase() === 'admin@btw.com' && password === 'btw@123') {
+      const result = validateLogin(email, password);
+      if (result.valid) {
         localStorage.setItem('btwAuth', 'true');
+        localStorage.setItem('btwAuthRole', result.role);
         window.location.href = 'checklist.html';
         return;
       }
 
-      loginError.textContent = 'Invalid credentials. Use the demo access shown below.';
+      loginError.textContent = 'Invalid credentials. Use one of the demo accounts shown below.';
     });
   }
 }
@@ -289,6 +293,7 @@ if (page === 'dashboard' || page === 'reports' || page === 'settings' || page?.s
   if (logoutBtn) {
     logoutBtn.addEventListener('click', () => {
       localStorage.removeItem('btwAuth');
+      localStorage.removeItem('btwAuthRole');
       window.location.href = 'index.html';
     });
   }
