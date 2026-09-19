@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 2 - Service & Hospitality</title>
+    <script type="module" crossorigin src="./assets/script-n_9QgYyk.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/script-CocLeXi1.css">
+  </head>
+  <body data-page="section-2" data-max-score="13">
+    <div class="page">
+      <div class="page-topbar">
+        <button type="button" class="secondary" id="backToDashboard">← Back to Dashboard</button>
+        <div class="actions">
+          <button type="button" class="secondary" id="resetBtn">Reset</button>
+          <button type="button" class="primary" id="saveBtn">Save Audit</button>
+          <button type="button" class="primary" id="printBtn">Print</button>
+          <button type="button" class="ghost" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+
+      <header class="section-page-header">
+        <h1>SECTION 2 - SERVICE &amp; HOSPITALITY</h1>
+      </header>
+
+      <section class="meta-grid">
+        <div class="meta-item">
+          <label for="outletNameInput">Outlet Name</label>
+          <input id="outletNameInput" type="text" placeholder="Enter outlet name" />
+        </div>
+        <div class="meta-item">
+          <label for="managerNameInput">Manager Name</label>
+          <input id="managerNameInput" type="text" placeholder="Enter manager name" />
+        </div>
+        <div class="meta-item">
+          <label for="auditDateInput">Audit Date</label>
+          <input id="auditDateInput" type="date" />
+        </div>
+        <div class="meta-item">
+          <label for="auditLocationInput">Location</label>
+          <input id="auditLocationInput" type="text" placeholder="Enter location" />
+        </div>
+      </section>
+
+      <div id="auditMetaStatus" class="login-error" style="margin: 10px 0 0; min-height: 18px;"></div>
+
+      <section class="audit-section">
+        <table class="audit-table">
+          <thead>
+            <tr>
+              <th style="width: 6%;">#</th>
+              <th>SECTION / CRITERIA</th>
+              <th style="width: 12%;">Ach.</th>
+              <th style="width: 10%;">Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Practicing 5 Ft. Challenge (Guest acknowledging)</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>2</td><td>Cashiers Greeting and Welcoming Guests</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>3</td><td>Cashier Suggestive Sells &amp; promotes new products</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>4</td><td>Cashiers are taking guest mobile number</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>5</td><td>Cashier completes Order taking in 90 seconds</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>6</td><td>Order Presenters Greeting Guests while taking KOT</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>7</td><td>Guests acknowledged with Thank You</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>8</td><td>Showroom Employees Greeting &amp; Saying Thank You</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>9</td><td>Employee appearance - Proper uniform, Name tag, groomed</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>10</td><td>Management appearance - Proper uniform, Name tag, groomed</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>11</td><td>Hospitality - Smiles, Courteous, friendly, eye contact</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>12</td><td>Manager interacts with min 3 guests per Travel path</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr><td>13</td><td>Employees demonstrate respect (Please &amp; Thank You)</td><td><input type="checkbox" data-points="1" /></td><td>1</td></tr>
+            <tr class="subtotal-row"><td colspan="2" class="subtotal-label">Subtotal</td><td colspan="2" class="subtotal-value"><span data-section-total>0</span> / 13</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="summary-box">
+        <h2>SUMMARY &amp; SCORING</h2>
+        <div class="summary-grid">
+          <div class="summary-row"><span class="label">Maximum Score</span><span class="value">13</span></div>
+          <div class="summary-row"><span class="label">Score Achieved</span><span class="value"><span id="score-achieved">0</span> / 13</span></div>
+          <div class="summary-row"><span class="label">Performance %</span><span class="value"><span id="performance-percent">0%</span></span></div>
+          <div class="summary-row highlight-row"><span class="label">Performance Rating</span><span class="value" id="performance-rating">Below Expectations</span></div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>
